@@ -1,0 +1,56 @@
+{
+  "name": "@eldoraui/cli",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Official CLI for Eldora UI",
+  "main": "dist/index.js",
+  "homepage": "https://eldoraui.site",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eldoraui/cli.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "eldoraui": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/cli.js",
+    "start": "node dist/cli.js",
+    "dev": "nodemon --watch src --ext ts,json --exec \"npm run build\"",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eldora-ui",
+    "eldoraui",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "cli",
+    "cursor",
+    "claude",
+    "windsurf",
+    "cline",
+    "roo-cline"
+  ],
+  "author": "Karthik Mudunuri <support@pro.eldoraui.site>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "inquirer": "^12.5.0",
+    "ora": "^8.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "nodemon": "^3.1.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
