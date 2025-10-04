@@ -3,7 +3,7 @@
 Official CLI for Eldora UI components and MCP configuration.
 
 <div align="center">
-  <img src="https://github.com/eldoraui/cli/blob/main/public/cli.png" alt="CLI" />
+  <img src="https://github.com/eldorauiofficial/cli/blob/main/public/cli.png" alt="CLI" />
 </div>
 
 ## Installation
